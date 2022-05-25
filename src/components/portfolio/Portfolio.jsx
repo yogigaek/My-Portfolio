@@ -12,44 +12,44 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Frontend MERN',
+    title: 'API (Express & Mongo) Frontend',
     github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    demo: 'https://belajar-react-mern.herokuapp.com/'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Frontend MERN',
-    github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    title: 'API (Express & Mongo) Backend',
+    github: "https://github.com/yogigaek/BackEnd-Mern/tree/master",
+    demo: 'https://mern-yogi-fullstack.herokuapp.com/api/v4/product'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Frontend MERN',
-    github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    title: 'Express Js',
+    github: "https://github.com/yogigaek/Express-js",
+    demo: 'https://yogi-expressjs.herokuapp.com/home'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Frontend MERN',
+    title: 'Express Js',
     github: "https://github.com/yogigaek/FrontEnd-Mern",
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Frontend MERN',
-    github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    title: 'ReactJs',
+    github: "https://github.com/yogigaek/portfolio-in-reactjs/tree/master",
+    demo: 'https://reactjs-includeall.netlify.app/'
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Frontend MERN',
-    github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    title: 'JavaScript OOP',
+    github: "https://github.com/yogigaek/mini-Library-from-javascript/tree/moduleSystem",
+    demo: 'https://prnt.sc/7eTsG4cdSyEf'
   },
 ]
 
