@@ -1,28 +1,19 @@
-import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav';
-import About from './components/about/About';
-import Experience from './components/experience/Experience';
-import Services from './components/services/Services';
-import Portfolio from './components/portfolio/Portfolio';
-import Testimonials from './components/testimonials/Testimonials';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer'; 
- 
+import React from 'react';
+import Component from './routes/routescomp';
+import Detail from './components/detail/Detail';
+import Detail2 from './components/detail2/Detail'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 const App = () => {
   return (
-    <>
-        <Header /> 
-        <Nav />
-        <About />
-        <Experience />
-        <Services />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-        <Footer />
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Component />} />
+        <Route path="/detail" element={<Detail />} />
+        <Route path='/detail2' element={<Detail2 />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

@@ -1,56 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
-
+import IMG1 from '../../assets/ss2.png';
+import IMG2 from '../../assets/det1.png';
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'API (Express & Mongo) Frontend',
-    github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://belajar-react-mern.herokuapp.com/'
-  },
+    title: 'E-COMMERCE Website',
+    github: "https://github.com/yogigaek/Client-pos-system",
+    demo: 'https://pos-system2.herokuapp.com/',
+    detail: <Link to={'/detail'} className="btn btn-primary">
+            Detail
+            </Link>
+  }, 
   {
     id: 2,
     image: IMG2,
-    title: 'API (Express & Mongo) Backend',
-    github: "https://github.com/yogigaek/BackEnd-Mern/tree/master",
-    demo: 'https://mern-yogi-fullstack.herokuapp.com/api/v4/product'
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: 'Express Js',
-    github: "https://github.com/yogigaek/Express-js",
-    demo: 'https://yogi-expressjs.herokuapp.com/home'
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Express Js',
-    github: "https://github.com/yogigaek/FrontEnd-Mern",
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'ReactJs',
-    github: "https://github.com/yogigaek/portfolio-in-reactjs/tree/master",
-    demo: 'https://reactjs-includeall.netlify.app/'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'JavaScript OOP',
-    github: "https://github.com/yogigaek/mini-Library-from-javascript/tree/moduleSystem",
-    demo: 'https://prnt.sc/7eTsG4cdSyEf'
-  },
+    title: 'E-COMMERCE Website',
+    github: "https://github.com/yogigaek/App-Market-Place",
+    demo: 'https://share.vidyard.com/watch/bn6RHvzhVw7DxAbSPRM3UD?',
+    detail: <Link to={'/detail2'} className="btn btn-primary">
+              Detail
+            </Link>
+  }
 ]
 
 const Portfolio = () => {
@@ -61,7 +35,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, github, demo, detail}) => {
             return (
               <article key={id} className='portfolio__item'>
                   <div className="portfolio__item-image">
@@ -71,6 +45,7 @@ const Portfolio = () => {
                     <div className="portfolio__item-cta">
                       <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
                       <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+                      <span>{detail}</span>
                     </div>
               </article>      
             )

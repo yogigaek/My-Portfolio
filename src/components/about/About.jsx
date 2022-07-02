@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/myphotos1.jpg'
+import ME from '../../assets/photos1.jpg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
@@ -23,24 +23,24 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>5+ Months Main Class &#40;MERN&#41;</small>
+              <small>Fresh Graduate</small>
             </article>
 
             <article className='about__card'>
               <FiUsers className='about__icon' />
-              <h5>Client</h5>
-              <small>1 Client is My Friend &#x1F607; </small> 
+              <h5>Mentoring</h5>
+              <small>Fullstack web developer</small> 
             </article>
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>30+ completed </small>
+              <small>2 completed </small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, laudantium pariatur. Sit ducimus deleniti quasi officia possimus nihil praesentium, pariatur distinctio quo aliquam qui totam ex? Ducimus autem culpa nulla.
+          Saya adalah seorang junior fullstack web developer. Saya belajar mengenai teknologi MERN selama 5 bulan dan Programming Fundamental 1 bulan di Eduwork.id. Saya memiliki 1 project website ecommerce dengan menerapkan React JS untuk frontend, redux untuk state management, Node JS dan Express JS untuk backend serta MongoDB sebagai database.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
